@@ -3,7 +3,7 @@ import { render, screen } from "@testing-library/react";
 import { http, HttpResponse } from "msw";
 
 import { server } from "../../../mocks/server";
-import invalidRoleUser from "../../../mocks/fixtures/invalid-role.json";
+import invalidRoleUser from "../../user-profile/mocks/fixtures/invalid-role.json";
 import { UserProfile } from "../components/UserProfile";
 
 beforeAll(() => server.listen());
