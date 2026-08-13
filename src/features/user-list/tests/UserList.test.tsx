@@ -17,15 +17,15 @@ describe("UserList Feature", () => {
   it("shows loading state initially", () => {
     render(<UserList />);
 
-    expect(screen.getByText(/loading user list/i)).toBeTruthy();
+    expect(screen.getByText(/loading user list/i)).toBeInTheDocument();
   });
 
   it("renders user data on success", async () => {
     render(<UserList />);
 
-    expect(await screen.findByText("Ratan")).toBeTruthy();
-    expect(screen.getByText("ratan@example.com")).toBeTruthy();
-    expect(screen.getByText("VIEWER")).toBeTruthy();
+    expect(await screen.findByText("Ratan")).toBeInTheDocument();
+    expect(screen.getByText("ratan@example.com")).toBeInTheDocument();
+    expect(screen.getByText("VIEWER")).toBeInTheDocument();
   });
 
   it("shows empty state when no users exist", async () => {
@@ -37,7 +37,7 @@ describe("UserList Feature", () => {
 
     render(<UserList />);
 
-    expect(await screen.findByText(/no users added yet/i)).toBeTruthy();
+    expect(await screen.findByText(/no users added yet/i)).toBeInTheDocument();
   });
 
   it("shows error state if the backend breaks the contract", async () => {
@@ -49,6 +49,6 @@ describe("UserList Feature", () => {
 
     render(<UserList />);
 
-    expect(await screen.findByText(/unable to load data/i)).toBeTruthy();
+    expect(await screen.findByText(/unable to load data/i)).toBeInTheDocument();
   });
 });
