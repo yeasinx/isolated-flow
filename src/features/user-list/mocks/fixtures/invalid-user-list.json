@@ -1,0 +1,19 @@
+{
+    "users": [
+        {
+            "id": "usr_123",
+            "name": "John",
+            "email": "john@example.com",
+            "role": "editor",
+            "createdAt": "2023-10-12T12:00:00Z"
+        },
+        {
+            "id": "usr_343",
+            "name": "Ratan",
+            "email": "ratan@example.com",
+            "role": "viewer",
+            "createdAt": "2024-10-12T12:00:00Z"
+        }
+    ],
+    "currentPage": 1
+}
