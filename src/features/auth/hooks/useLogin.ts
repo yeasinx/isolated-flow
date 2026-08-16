@@ -14,7 +14,7 @@ const [formError, setFormError] = useState<string | null>(null);
 
 const [successUser, setSuccessUser] = useState<User | null>(null);
 
-const handleSubmit = async (event: SubmitEvent<HTMLFormElement>) => {
+const handleSubmit = async (event: React.SubmitEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     setFieldErrors({});
