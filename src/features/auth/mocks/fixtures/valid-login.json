@@ -1,0 +1,11 @@
+{
+  "accessToken": "mock_jwt_12345_abcdef",
+  "expiresIn": 3600,
+  "user": {
+    "id": "usr_876",
+    "name": "John Doe",
+    "email": "john@example.com",
+    "role": "editor",
+    "createdAt": "2025-10-10T09:00:00Z"
+  }
+}
